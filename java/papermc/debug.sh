@@ -21,10 +21,8 @@ start)
     screen -dmS velocity ./velocity.sh
     ;;
 clean)
-    cd "$PAPER_TARGET"
-    git clean -xdn
-    cd "$VELOCITY_TARGET"
-    git clean -xdn
+    git clean -Xfq "$PAPER_TARGET"
+    git clean -Xfq "$VELOCITY_TARGET"
     ;;
 stop)
     screen -S paper -p 0 -X stuff "stop^M"
