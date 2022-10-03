@@ -12,7 +12,7 @@
 set -eu
 ./update.sh
 cd ./paper
-screen -s paper ./paper.sh
+screen -dmS paper ./paper.sh
 cd ../velocity
-screen -s velocity ./velocity.sh
+screen -dmS velocity ./velocity.sh
 echo "Type screen -x paper/velocity to switch to console"
