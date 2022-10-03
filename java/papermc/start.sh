@@ -15,4 +15,3 @@ cd ./paper
 screen -dmS paper ./paper.sh
 cd ../velocity
 screen -dmS velocity ./velocity.sh
-echo "Type screen -x paper/velocity to switch to console"
