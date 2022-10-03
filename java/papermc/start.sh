@@ -11,5 +11,8 @@
 
 set -eu
 ./update.sh
-./paper/paper.sh
-./velocity/velocity.sh
+cd ./paper
+screen -s paper ./paper.sh
+cd ./velocity
+screen -s velocity ./velocity.sh
+echo "Type screen -x paper/velocity to switch to console"
