@@ -10,8 +10,10 @@
 ###
 
 set -eu
+source ./variables
+
 ./update.sh
-cd ./paper
+cd "$PAPER_TARGET"
 screen -dmS paper ./paper.sh
-cd ../velocity
+cd ../"$VELOCITY_TARGET"
 screen -dmS velocity ./velocity.sh
