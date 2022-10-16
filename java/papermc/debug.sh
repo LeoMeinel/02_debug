@@ -10,6 +10,7 @@
 ###
 
 set -eu
+
 DIR=~/src/20_debug/java/papermc
 source "$DIR"/variables
 
