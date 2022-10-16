@@ -10,7 +10,9 @@
 ###
 
 set -eu
-source ./variables
+
+DIR=~/src/20_debug/java/papermc
+source "$DIR"/variables
 
 PAPER_BUILD="$(/usr/bin/curl -s "https://papermc.io/api/v2/projects/paper/versions/${PAPER_VERSION}" | /usr/bin/grep -Po 'builds.*' | /usr/bin/awk -F ',' '{ print $NF }' | /usr/bin/grep -Po '\d+')"
 curl -s https://papermc.io/api/v2/projects/paper/versions/$PAPER_VERSION/builds/$PAPER_BUILD/downloads/paper-$PAPER_VERSION-$PAPER_BUILD.jar >"$PAPER_TARGET"/paper.jar
