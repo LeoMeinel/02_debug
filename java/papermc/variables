@@ -1,4 +1,4 @@
 PAPER_VERSION="1.19.2"
-PAPER_TARGET=~/src/02_debug/java/papermc/paper
+PAPER_TARGET=~/src/20_debug/java/papermc/paper
 VELOCITY_VERSION="3.1.1"
-VELOCITY_TARGET=~/src/02_debug/java/papermc/velocity
+VELOCITY_TARGET=~/src/20_debug/java/papermc/velocity
