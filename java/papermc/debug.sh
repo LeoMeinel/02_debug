@@ -10,11 +10,12 @@
 ###
 
 set -eu
-source ./variables
+DIR=~/src/20_debug/java/papermc
+source "$DIR"/variables
 
 case "$1" in
 start)
-    ./update.sh
+    "$DIR"/update.sh
     cd "$PAPER_TARGET"
     screen -dmS paper ./paper.sh
     cd "$VELOCITY_TARGET"
