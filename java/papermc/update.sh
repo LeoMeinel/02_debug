@@ -11,7 +11,7 @@
 
 set -eu
 
-DIR=~/src/20_debug/java/papermc
+DIR=~/src/20-debug/java/papermc
 source "$DIR"/variables
 
 PAPER_BUILD="$(/usr/bin/curl -s "https://papermc.io/api/v2/projects/paper/versions/${PAPER_VERSION}" | /usr/bin/grep -Po 'builds.*' | /usr/bin/awk -F ',' '{ print $NF }' | /usr/bin/grep -Po '\d+')"
